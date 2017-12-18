@@ -27,7 +27,7 @@ public class DiceMasterOverviewController {
 
             // set initial data into diceMaster.controller
             InGameController controller = loader.getController();
-            controller.setAppController(this);
+            controller.setAppController(this, 4);
 
             // add layout to a scene and show them all
             Scene scene = new Scene(rootLayout);

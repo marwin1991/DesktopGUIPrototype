@@ -3,9 +3,10 @@ package diceMaster.controller;
 import diceMaster.view.DicesField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.scene.Group;
 import javafx.scene.control.Button;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.shape.Line;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -13,6 +14,10 @@ import java.util.Random;
 
 public class InGameController {
     private DiceMasterOverviewController appController;
+    private int numberOfPlayers = 0;
+
+    @FXML
+    BorderPane borderPane;
 
     @FXML
     Button reRollButton;
@@ -20,9 +25,20 @@ public class InGameController {
     @FXML
     DicesField dicesField;
 
-    public void setAppController(DiceMasterOverviewController appController) {
+    @FXML
+    Line splitGameWindowLine;
+
+    public void setAppController(DiceMasterOverviewController appController, int numberOfPlayers) {
         this.appController = appController;
+        this.numberOfPlayers = numberOfPlayers;
+        this.bindSizeProperties();
+        this.dicesField.setDicesFiledScale(1);
     }
+
+    private void bindSizeProperties(){
+        this.splitGameWindowLine.endXProperty().bind(borderPane.widthProperty());
+    }
+
 
     public void handleReRoll(ActionEvent event) {
         List<Integer> randomDotsToSet = new LinkedList<>();
@@ -42,7 +58,7 @@ public class InGameController {
         reRollButton.setDisable(true);
     }
 
-    public void handleDicesFieldMouseCiliced(MouseEvent mouseEvent) {
+    public void handleDicesFieldMouseClicked(MouseEvent mouseEvent) {
         boolean flag = false;
         for(int i=0; i<5; i++)
             if(dicesField.getDices().get(i).isSelected())
