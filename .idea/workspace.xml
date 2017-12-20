@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9b85a78-ac97-4457-8dac-e7e5f9f49030" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/controller/InGameController.class" afterPath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/controller/InGameController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/view/Dice.class" afterPath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/view/Dice.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/view/DicesField.class" afterPath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/view/DicesField.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/view/Dice.class" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/diceMaster/view/Dice.java" afterPath="$PROJECT_DIR$/src/diceMaster/view/DiceView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/controller/DiceMasterOverviewController.java" afterPath="$PROJECT_DIR$/src/diceMaster/controller/DiceMasterOverviewController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/controller/InGameController.java" afterPath="$PROJECT_DIR$/src/diceMaster/controller/InGameController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/view/Dice.java" afterPath="$PROJECT_DIR$/src/diceMaster/view/Dice.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/view/DicesField.java" afterPath="$PROJECT_DIR$/src/diceMaster/view/DicesField.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/view/InGamePane.fxml" afterPath="$PROJECT_DIR$/src/diceMaster/view/InGamePane.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,29 +18,259 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="InGamePane.fxml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/diceMaster/view/InGamePane.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InGameController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/InGameController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="34" column="44" lean-forward="false" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
-              <folding>
-                <element signature="e#946#947#0" expanded="true" />
-                <element signature="e#1034#1035#0" expanded="true" />
-              </folding>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file leaf-file-name="JAVA/diceMaster" pinned="false" current-in-tab="true">
+        <entry file="uml://JAVA/diceMaster">
+          <provider selected="true" editor-type-id="UmlEditorProvider">
+            <state>
+              <ID>JAVA</ID>
+              <OriginalElement>diceMaster</OriginalElement>
+              <nodes>
+                <node x="256.43605324074076" y="1419.0">diceMaster.model.UserType</node>
+                <node x="1212.8847800925926" y="0.0">diceMaster.model.DiceNumbers</node>
+                <node x="909.6462962962962" y="851.0">diceMaster.model.GameDTO</node>
+                <node x="1848.1416666666667" y="1391.5">diceMaster.Main</node>
+                <node x="363.5564236111112" y="1692.0">diceMaster.model.Server</node>
+                <node x="1942.2514467592591" y="1746.0">diceMaster.controller.CreateGameController</node>
+                <node x="1546.556423611111" y="1944.0">diceMaster.controller.GamesTableController</node>
+                <node x="77.1712962962963" y="54.0">diceMaster.model.GameType</node>
+                <node x="1456.3847800925926" y="506.5">diceMaster.model.User</node>
+                <node x="975.1416666666667" y="1432.5">diceMaster.model.GamesTableEventHandler</node>
+                <node x="421.0" y="438.0">diceMaster.model.MoveDTO</node>
+                <node x="939.3847800925926" y="424.5">diceMaster.model.Triplet</node>
+                <node x="0.0" y="276.0">diceMaster.model.GameConfigDTO</node>
+                <node x="1142.3847800925926" y="465.0">diceMaster.model.Dices</node>
+                <node x="570.9181134259259" y="67.5">diceMaster.model.DTO</node>
+                <node x="866.6416666666667" y="1155.5">diceMaster.model.GameEventHandler</node>
+                <node x="1502.9181134259259" y="1169.0">diceMaster.view</node>
+                <node x="1583.2514467592591" y="1718.0">diceMaster.controller.DiceMasterOverviewController</node>
+                <node x="508.0" y="1128.0">diceMaster.model.ServerGame</node>
+                <node x="1361.1416666666667" y="1297.0">diceMaster.controller.InGameController</node>
+                <node x="395.0564236111112" y="2011.5">diceMaster.controller.LoginController</node>
+              </nodes>
+              <notes />
+              <edges>
+                <edge source="diceMaster.controller.InGameController" target="diceMaster.model.GameDTO">
+                  <point x="155.66666666666669" y="-167.5" />
+                  <point x="1750.3083333333334" y="1272.0" />
+                  <point x="1696.4796296296295" y="1272.0" />
+                  <point x="1696.4796296296295" y="1108.0" />
+                  <point x="1184.8962962962962" y="1108.0" />
+                  <point x="91.74999999999994" y="113.5" />
+                </edge>
+                <edge source="diceMaster.model.GameDTO" target="diceMaster.model.User">
+                  <point x="146.8" y="-113.5" />
+                  <point x="1239.9462962962962" y="831.0" />
+                  <point x="1533.3847800925926" y="831.0" />
+                  <point x="0.0" y="32.0" />
+                </edge>
+                <edge source="diceMaster.view" target="diceMaster.view">
+                  <point x="-49.5" y="18.5" />
+                  <point x="1519.4181134259259" y="1226.0" />
+                  <point x="1482.9181134259259" y="1226.0" />
+                  <point x="1482.9181134259259" y="1199.8333333333333" />
+                  <point x="-66.0" y="12.333333333333258" />
+                </edge>
+                <edge source="diceMaster.model.MoveDTO" target="diceMaster.model.DTO">
+                  <point x="0.0" y="-100.5" />
+                  <point x="575.0" y="256.0" />
+                  <point x="668.4181134259259" y="256.0" />
+                  <point x="0.0" y="45.5" />
+                </edge>
+                <edge source="diceMaster.model.Server" target="diceMaster.model.GamesTableEventHandler">
+                  <point x="239.58333333333326" y="-86.0" />
+                  <point x="890.6397569444445" y="1672.0" />
+                  <point x="1066.6416666666667" y="1672.0" />
+                  <point x="-91.5" y="32.0" />
+                </edge>
+                <edge source="diceMaster.controller.GamesTableController" target="diceMaster.model.GameDTO">
+                  <point x="214.8125" y="-208.0" />
+                  <point x="2006.868923611111" y="1924.0" />
+                  <point x="2373.418113425926" y="1924.0" />
+                  <point x="2373.418113425926" y="1098.0" />
+                  <point x="1246.062962962963" y="1098.0" />
+                  <point x="152.91666666666657" y="113.5" />
+                </edge>
+                <edge source="diceMaster.model.GameConfigDTO" target="diceMaster.model.GameType">
+                  <point x="0.0" y="-262.5" />
+                  <point x="200.5" y="256.0" />
+                  <point x="177.6712962962963" y="256.0" />
+                  <point x="33.5" y="59.0" />
+                </edge>
+                <edge source="diceMaster.model.ServerGame" target="diceMaster.model.GameDTO">
+                  <point x="67.0" y="-59.5" />
+                  <point x="709.0" y="1098.0" />
+                  <point x="940.2296296296296" y="1098.0" />
+                  <point x="-152.91666666666666" y="113.5" />
+                </edge>
+                <edge source="diceMaster.model.GameDTO" target="diceMaster.model.Dices">
+                  <point x="73.39999999999998" y="-113.5" />
+                  <point x="1166.5462962962963" y="821.0" />
+                  <point x="1289.3847800925926" y="821.0" />
+                  <point x="0.0" y="73.5" />
+                </edge>
+                <edge source="diceMaster.model.GameDTO" target="diceMaster.model.Triplet">
+                  <point x="0.0" y="-113.5" />
+                  <point x="1093.1462962962962" y="831.0" />
+                  <point x="1030.8847800925926" y="831.0" />
+                  <point x="0.0" y="114.0" />
+                </edge>
+                <edge source="diceMaster.model.ServerGame" target="diceMaster.model.MoveDTO">
+                  <point x="-67.0" y="-59.5" />
+                  <point x="0.0" y="100.5" />
+                </edge>
+                <edge source="diceMaster.controller.DiceMasterOverviewController" target="diceMaster.Main">
+                  <point x="28.25" y="-60.0" />
+                  <point x="1781.0014467592591" y="1652.0" />
+                  <point x="1929.975" y="1652.0" />
+                  <point x="-163.66666666666674" y="73.0" />
+                </edge>
+                <edge source="diceMaster.model.GamesTableEventHandler" target="diceMaster.model.GameDTO">
+                  <point x="0.0" y="-32.0" />
+                  <point x="1158.1416666666667" y="1108.0" />
+                  <point x="1123.7296296296295" y="1108.0" />
+                  <point x="30.583333333333314" y="113.5" />
+                </edge>
+                <edge source="diceMaster.controller.GamesTableController" target="diceMaster.controller.CreateGameController">
+                  <point x="92.0625" y="-208.0" />
+                  <point x="1884.118923611111" y="1904.0" />
+                  <point x="2004.0014467592591" y="1904.0" />
+                  <point x="-61.75" y="32.0" />
+                </edge>
+                <edge source="diceMaster.model.GameEventHandler" target="diceMaster.model.GameDTO">
+                  <point x="0.0" y="-32.0" />
+                  <point x="1007.1416666666667" y="1108.0" />
+                  <point x="1062.562962962963" y="1108.0" />
+                  <point x="-30.583333333333343" y="113.5" />
+                </edge>
+                <edge source="diceMaster.controller.GamesTableController" target="diceMaster.controller.DiceMasterOverviewController">
+                  <point x="30.6875" y="-208.0" />
+                  <point x="1822.743923611111" y="1894.0" />
+                  <point x="1879.8764467592591" y="1894.0" />
+                  <point x="127.125" y="60.0" />
+                </edge>
+                <edge source="diceMaster.model.Server" target="diceMaster.model.ServerGame">
+                  <point x="-47.91666666666663" y="-86.0" />
+                  <point x="603.1397569444446" y="1672.0" />
+                  <point x="642.0" y="1672.0" />
+                  <point x="0.0" y="59.5" />
+                </edge>
+                <edge source="diceMaster.model.Server" target="diceMaster.model.GameDTO">
+                  <point x="47.916666666666686" y="-86.0" />
+                  <point x="698.9730902777778" y="1652.0" />
+                  <point x="856.1416666666667" y="1652.0" />
+                  <point x="856.1416666666667" y="1108.0" />
+                  <point x="1001.3962962962962" y="1108.0" />
+                  <point x="-91.75" y="113.5" />
+                </edge>
+                <edge source="diceMaster.controller.GamesTableController" target="diceMaster.model.GamesTableEventHandler">
+                  <point x="-92.0625" y="-208.0" />
+                  <point x="1699.993923611111" y="1884.0" />
+                  <point x="1249.6416666666667" y="1884.0" />
+                  <point x="91.5" y="32.0" />
+                </edge>
+                <edge source="diceMaster.model.GameConfigDTO" target="diceMaster.model.DTO">
+                  <point x="133.66666666666674" y="-262.5" />
+                  <point x="334.16666666666674" y="246.0" />
+                  <point x="603.4181134259259" y="246.0" />
+                  <point x="-65.0" y="45.5" />
+                </edge>
+                <edge source="diceMaster.model.GameDTO" target="diceMaster.model.DTO">
+                  <point x="-73.39999999999998" y="-113.5" />
+                  <point x="1019.7462962962964" y="821.0" />
+                  <point x="910.5097800925926" y="821.0" />
+                  <point x="910.5097800925926" y="256.0" />
+                  <point x="733.4181134259259" y="256.0" />
+                  <point x="65.0" y="45.5" />
+                </edge>
+                <edge source="diceMaster.model.Dices" target="diceMaster.model.DiceNumbers">
+                  <point x="98.0" y="-73.5" />
+                  <point x="1387.3847800925926" y="256.0" />
+                  <point x="1340.3847800925926" y="256.0" />
+                  <point x="51.0" y="113.0" />
+                </edge>
+                <edge source="diceMaster.Main" target="diceMaster.controller.DiceMasterOverviewController">
+                  <point x="163.66666666666652" y="73.0" />
+                  <point x="2257.3083333333334" y="1672.0" />
+                  <point x="1894.0014467592591" y="1672.0" />
+                  <point x="141.25" y="-60.0" />
+                </edge>
+                <edge source="diceMaster.controller.LoginController" target="diceMaster.model.Server">
+                  <point x="-184.125" y="-140.5" />
+                  <point x="456.4314236111112" y="1924.0" />
+                  <point x="435.4314236111112" y="1924.0" />
+                  <point x="-215.625" y="86.0" />
+                </edge>
+                <edge source="diceMaster.controller.DiceMasterOverviewController" target="diceMaster.controller.InGameController">
+                  <point x="-141.25" y="-60.0" />
+                  <point x="1611.5014467592591" y="1672.0" />
+                  <point x="1438.975" y="1672.0" />
+                  <point x="-155.66666666666666" y="167.5" />
+                </edge>
+                <edge source="diceMaster.model.Server" target="diceMaster.model.GameConfigDTO">
+                  <point x="-239.58333333333326" y="-86.0" />
+                  <point x="411.47309027777794" y="1672.0" />
+                  <point x="100.25" y="1672.0" />
+                  <point x="-100.25" y="262.5" />
+                </edge>
+                <edge source="diceMaster.model.GameDTO" target="diceMaster.model.GameConfigDTO">
+                  <point x="-146.79999999999995" y="-113.5" />
+                  <point x="946.3462962962963" y="831.0" />
+                  <point x="300.75" y="831.0" />
+                  <point x="100.25" y="262.5" />
+                </edge>
+                <edge source="diceMaster.controller.GamesTableController" target="diceMaster.model.Server">
+                  <point x="-214.8125" y="-208.0" />
+                  <point x="1577.243923611111" y="1904.0" />
+                  <point x="722.9314236111112" y="1904.0" />
+                  <point x="71.875" y="86.0" />
+                </edge>
+                <edge source="diceMaster.controller.InGameController" target="diceMaster.controller.DiceMasterOverviewController">
+                  <point x="155.66666666666669" y="167.5" />
+                  <point x="1750.3083333333334" y="1672.0" />
+                  <point x="1724.5014467592591" y="1672.0" />
+                  <point x="-28.25" y="-60.0" />
+                </edge>
+                <edge source="diceMaster.controller.InGameController" target="diceMaster.model.GameEventHandler">
+                  <point x="-155.66666666666663" y="-167.5" />
+                  <point x="1438.9750000000001" y="1272.0" />
+                  <point x="1077.3916666666667" y="1272.0" />
+                  <point x="70.25" y="32.0" />
+                </edge>
+                <edge source="diceMaster.controller.InGameController" target="diceMaster.view">
+                  <point x="2.8421709430404007E-14" y="-167.5" />
+                  <point x="1594.6416666666669" y="1272.0" />
+                  <point x="1618.4181134259259" y="1272.0" />
+                  <point x="49.5" y="18.5" />
+                </edge>
+                <edge source="diceMaster.model.Server" target="diceMaster.model.UserType">
+                  <point x="-143.74999999999994" y="-86.0" />
+                  <point x="507.3064236111113" y="1662.0" />
+                  <point x="318.43605324074076" y="1662.0" />
+                  <point x="0.0" y="45.5" />
+                </edge>
+                <edge source="diceMaster.controller.LoginController" target="diceMaster.controller.DiceMasterOverviewController">
+                  <point x="61.375" y="-140.5" />
+                  <point x="701.9314236111112" y="1914.0" />
+                  <point x="1625.6264467592591" y="1914.0" />
+                  <point x="-127.125" y="60.0" />
+                </edge>
+                <edge source="diceMaster.model.Server" target="diceMaster.model.GameEventHandler">
+                  <point x="143.75" y="-86.0" />
+                  <point x="794.8064236111112" y="1662.0" />
+                  <point x="936.8916666666667" y="1662.0" />
+                  <point x="-70.25" y="32.0" />
+                </edge>
+              </edges>
+              <settings layout="Hierarchic Group" zoom="0.6542016806722689" x="1341.578034682081" y="1285.5382145150932" />
+              <SelectedNodes />
+              <Categories>
+                <Category>Fields</Category>
+                <Category>Constructors</Category>
+                <Category>Methods</Category>
+              </Categories>
+              <SCOPE>All</SCOPE>
+              <VISIBILITY>private</VISIBILITY>
             </state>
           </provider>
         </entry>
@@ -74,9 +299,31 @@
         <option value="$PROJECT_DIR$/src/diceMaster/view/PlayersLocationer.java" />
         <option value="$PROJECT_DIR$/src/diceMaster/view/Dice.java" />
         <option value="$PROJECT_DIR$/src/diceMaster/view/DicesField.java" />
-        <option value="$PROJECT_DIR$/src/diceMaster/controller/DiceMasterOverviewController.java" />
         <option value="$PROJECT_DIR$/src/diceMaster/view/InGamePane.fxml" />
+        <option value="$PROJECT_DIR$/src/diceMaster/controller/DiceMasterOverviewController.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/DiceNumbers.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/Dices.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/DTO.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/GameConfigDTO.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/UserType.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/User.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/Triplet.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/ServerGame.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/MoveDTO.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/GameType.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/GamesTableEventHandler.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/GameEventHandler.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/GameDTO.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/Server.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/controller/GameTabelController.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/view/LoginPane.fxml" />
+        <option value="$PROJECT_DIR$/src/diceMaster/view/createGamePane.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/controller/CreateGamePane.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/controller/CreateGameController.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/view/GamesTablePane.fxml" />
         <option value="$PROJECT_DIR$/src/diceMaster/controller/InGameController.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/controller/GamesTableController.java" />
       </list>
     </option>
   </component>
@@ -110,10 +357,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AndroidView" />
       <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -144,6 +391,13 @@
               <item name="DesktopGUIPrototype" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="diceMaster" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DesktopGUIPrototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesktopGUIPrototype" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="diceMaster" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -158,6 +412,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="add_unversioned_files" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Piotr\Desktop\Projects\Java\DesktopGUIPrototype\src\diceMaster\view" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -284,11 +547,14 @@
       <workItem from="1513256347218" duration="646000" />
       <workItem from="1513428490004" duration="8000" />
       <workItem from="1513600382170" duration="3141000" />
+      <workItem from="1513775637591" duration="1257000" />
+      <workItem from="1513776916168" duration="663000" />
+      <workItem from="1513777600464" duration="2236000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3975000" />
+    <option name="totallyTimeSpent" value="8131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
@@ -303,12 +569,13 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819384" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -320,8 +587,36 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -334,7 +629,131 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/.gitignore">
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="39" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/GamesTableController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="567">
+          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/LoginPane.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/MoveDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GamesTableEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameConfigDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/GamesTablePane.fxml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/CreateTabelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/LoginPane.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="57" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/InGamePane.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -342,33 +761,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/Dice.java">
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/InGameController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1302">
-          <caret line="72" column="61" lean-forward="false" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
-          <folding>
-            <element signature="e#467#468#0" expanded="true" />
-            <element signature="e#499#500#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/DicesField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="42" column="19" lean-forward="true" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-          <folding>
-            <element signature="e#785#786#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/DiceMasterOverviewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="27" column="58" lean-forward="true" selection-start-line="27" selection-start-column="58" selection-end-line="27" selection-end-column="58" />
+        <state relative-caret-position="714">
+          <caret line="34" column="44" lean-forward="false" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -384,34 +788,565 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/InGameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="34" column="44" lean-forward="false" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
-          <folding>
-            <element signature="e#946#947#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/diceMaster/view/InGamePane.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
           <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/DiceView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="834">
+          <caret line="72" column="61" lean-forward="false" selection-start-line="72" selection-start-column="61" selection-end-line="72" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/CreateTabelController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="34" lean-forward="false" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/DiceNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/Dices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/DTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="19" lean-forward="false" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/UserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/Triplet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="15" lean-forward="true" selection-start-line="2" selection-start-column="15" selection-end-line="2" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/ServerGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="39" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/LoginPane.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/MoveDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="18" lean-forward="false" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GamesTableEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="24" lean-forward="false" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="45" lean-forward="false" selection-start-line="9" selection-start-column="45" selection-end-line="9" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameConfigDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="30" lean-forward="true" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/GamesTableController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="57" column="0" lean-forward="true" selection-start-line="57" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+          <folding>
+            <element signature="e#1224#1225#0" expanded="true" />
+            <element signature="e#1272#1273#0" expanded="true" />
+            <element signature="e#1349#1350#0" expanded="true" />
+            <element signature="e#1382#1383#0" expanded="true" />
+            <element signature="e#1456#1457#0" expanded="true" />
+            <element signature="e#1504#1505#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/GamesTablePane.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="200" lean-forward="true" selection-start-line="13" selection-start-column="200" selection-end-line="13" selection-end-column="200" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/DiceMasterOverviewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/InGameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1218">
+          <caret line="72" column="8" lean-forward="false" selection-start-line="72" selection-start-column="8" selection-end-line="72" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/CreateGameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/DicesField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/diceMaster">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>diceMaster</OriginalElement>
+          <nodes>
+            <node x="256.43605324074076" y="1419.0">diceMaster.model.UserType</node>
+            <node x="1212.8847800925926" y="0.0">diceMaster.model.DiceNumbers</node>
+            <node x="909.6462962962962" y="851.0">diceMaster.model.GameDTO</node>
+            <node x="1848.1416666666667" y="1391.5">diceMaster.Main</node>
+            <node x="363.5564236111112" y="1692.0">diceMaster.model.Server</node>
+            <node x="1942.2514467592591" y="1746.0">diceMaster.controller.CreateGameController</node>
+            <node x="1546.556423611111" y="1944.0">diceMaster.controller.GamesTableController</node>
+            <node x="77.1712962962963" y="54.0">diceMaster.model.GameType</node>
+            <node x="1456.3847800925926" y="506.5">diceMaster.model.User</node>
+            <node x="975.1416666666667" y="1432.5">diceMaster.model.GamesTableEventHandler</node>
+            <node x="421.0" y="438.0">diceMaster.model.MoveDTO</node>
+            <node x="939.3847800925926" y="424.5">diceMaster.model.Triplet</node>
+            <node x="0.0" y="276.0">diceMaster.model.GameConfigDTO</node>
+            <node x="1142.3847800925926" y="465.0">diceMaster.model.Dices</node>
+            <node x="570.9181134259259" y="67.5">diceMaster.model.DTO</node>
+            <node x="866.6416666666667" y="1155.5">diceMaster.model.GameEventHandler</node>
+            <node x="1502.9181134259259" y="1169.0">diceMaster.view</node>
+            <node x="1583.2514467592591" y="1718.0">diceMaster.controller.DiceMasterOverviewController</node>
+            <node x="508.0" y="1128.0">diceMaster.model.ServerGame</node>
+            <node x="1361.1416666666667" y="1297.0">diceMaster.controller.InGameController</node>
+            <node x="395.0564236111112" y="2011.5">diceMaster.controller.LoginController</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="diceMaster.controller.InGameController" target="diceMaster.model.GameDTO">
+              <point x="155.66666666666669" y="-167.5" />
+              <point x="1750.3083333333334" y="1272.0" />
+              <point x="1696.4796296296295" y="1272.0" />
+              <point x="1696.4796296296295" y="1108.0" />
+              <point x="1184.8962962962962" y="1108.0" />
+              <point x="91.74999999999994" y="113.5" />
+            </edge>
+            <edge source="diceMaster.model.GameDTO" target="diceMaster.model.User">
+              <point x="146.8" y="-113.5" />
+              <point x="1239.9462962962962" y="831.0" />
+              <point x="1533.3847800925926" y="831.0" />
+              <point x="0.0" y="32.0" />
+            </edge>
+            <edge source="diceMaster.view" target="diceMaster.view">
+              <point x="-49.5" y="18.5" />
+              <point x="1519.4181134259259" y="1226.0" />
+              <point x="1482.9181134259259" y="1226.0" />
+              <point x="1482.9181134259259" y="1199.8333333333333" />
+              <point x="-66.0" y="12.333333333333258" />
+            </edge>
+            <edge source="diceMaster.model.MoveDTO" target="diceMaster.model.DTO">
+              <point x="0.0" y="-100.5" />
+              <point x="575.0" y="256.0" />
+              <point x="668.4181134259259" y="256.0" />
+              <point x="0.0" y="45.5" />
+            </edge>
+            <edge source="diceMaster.model.Server" target="diceMaster.model.GamesTableEventHandler">
+              <point x="239.58333333333326" y="-86.0" />
+              <point x="890.6397569444445" y="1672.0" />
+              <point x="1066.6416666666667" y="1672.0" />
+              <point x="-91.5" y="32.0" />
+            </edge>
+            <edge source="diceMaster.controller.GamesTableController" target="diceMaster.model.GameDTO">
+              <point x="214.8125" y="-208.0" />
+              <point x="2006.868923611111" y="1924.0" />
+              <point x="2373.418113425926" y="1924.0" />
+              <point x="2373.418113425926" y="1098.0" />
+              <point x="1246.062962962963" y="1098.0" />
+              <point x="152.91666666666657" y="113.5" />
+            </edge>
+            <edge source="diceMaster.model.GameConfigDTO" target="diceMaster.model.GameType">
+              <point x="0.0" y="-262.5" />
+              <point x="200.5" y="256.0" />
+              <point x="177.6712962962963" y="256.0" />
+              <point x="33.5" y="59.0" />
+            </edge>
+            <edge source="diceMaster.model.ServerGame" target="diceMaster.model.GameDTO">
+              <point x="67.0" y="-59.5" />
+              <point x="709.0" y="1098.0" />
+              <point x="940.2296296296296" y="1098.0" />
+              <point x="-152.91666666666666" y="113.5" />
+            </edge>
+            <edge source="diceMaster.model.GameDTO" target="diceMaster.model.Dices">
+              <point x="73.39999999999998" y="-113.5" />
+              <point x="1166.5462962962963" y="821.0" />
+              <point x="1289.3847800925926" y="821.0" />
+              <point x="0.0" y="73.5" />
+            </edge>
+            <edge source="diceMaster.model.GameDTO" target="diceMaster.model.Triplet">
+              <point x="0.0" y="-113.5" />
+              <point x="1093.1462962962962" y="831.0" />
+              <point x="1030.8847800925926" y="831.0" />
+              <point x="0.0" y="114.0" />
+            </edge>
+            <edge source="diceMaster.model.ServerGame" target="diceMaster.model.MoveDTO">
+              <point x="-67.0" y="-59.5" />
+              <point x="0.0" y="100.5" />
+            </edge>
+            <edge source="diceMaster.controller.DiceMasterOverviewController" target="diceMaster.Main">
+              <point x="28.25" y="-60.0" />
+              <point x="1781.0014467592591" y="1652.0" />
+              <point x="1929.975" y="1652.0" />
+              <point x="-163.66666666666674" y="73.0" />
+            </edge>
+            <edge source="diceMaster.model.GamesTableEventHandler" target="diceMaster.model.GameDTO">
+              <point x="0.0" y="-32.0" />
+              <point x="1158.1416666666667" y="1108.0" />
+              <point x="1123.7296296296295" y="1108.0" />
+              <point x="30.583333333333314" y="113.5" />
+            </edge>
+            <edge source="diceMaster.controller.GamesTableController" target="diceMaster.controller.CreateGameController">
+              <point x="92.0625" y="-208.0" />
+              <point x="1884.118923611111" y="1904.0" />
+              <point x="2004.0014467592591" y="1904.0" />
+              <point x="-61.75" y="32.0" />
+            </edge>
+            <edge source="diceMaster.model.GameEventHandler" target="diceMaster.model.GameDTO">
+              <point x="0.0" y="-32.0" />
+              <point x="1007.1416666666667" y="1108.0" />
+              <point x="1062.562962962963" y="1108.0" />
+              <point x="-30.583333333333343" y="113.5" />
+            </edge>
+            <edge source="diceMaster.controller.GamesTableController" target="diceMaster.controller.DiceMasterOverviewController">
+              <point x="30.6875" y="-208.0" />
+              <point x="1822.743923611111" y="1894.0" />
+              <point x="1879.8764467592591" y="1894.0" />
+              <point x="127.125" y="60.0" />
+            </edge>
+            <edge source="diceMaster.model.Server" target="diceMaster.model.ServerGame">
+              <point x="-47.91666666666663" y="-86.0" />
+              <point x="603.1397569444446" y="1672.0" />
+              <point x="642.0" y="1672.0" />
+              <point x="0.0" y="59.5" />
+            </edge>
+            <edge source="diceMaster.model.Server" target="diceMaster.model.GameDTO">
+              <point x="47.916666666666686" y="-86.0" />
+              <point x="698.9730902777778" y="1652.0" />
+              <point x="856.1416666666667" y="1652.0" />
+              <point x="856.1416666666667" y="1108.0" />
+              <point x="1001.3962962962962" y="1108.0" />
+              <point x="-91.75" y="113.5" />
+            </edge>
+            <edge source="diceMaster.controller.GamesTableController" target="diceMaster.model.GamesTableEventHandler">
+              <point x="-92.0625" y="-208.0" />
+              <point x="1699.993923611111" y="1884.0" />
+              <point x="1249.6416666666667" y="1884.0" />
+              <point x="91.5" y="32.0" />
+            </edge>
+            <edge source="diceMaster.model.GameConfigDTO" target="diceMaster.model.DTO">
+              <point x="133.66666666666674" y="-262.5" />
+              <point x="334.16666666666674" y="246.0" />
+              <point x="603.4181134259259" y="246.0" />
+              <point x="-65.0" y="45.5" />
+            </edge>
+            <edge source="diceMaster.model.GameDTO" target="diceMaster.model.DTO">
+              <point x="-73.39999999999998" y="-113.5" />
+              <point x="1019.7462962962964" y="821.0" />
+              <point x="910.5097800925926" y="821.0" />
+              <point x="910.5097800925926" y="256.0" />
+              <point x="733.4181134259259" y="256.0" />
+              <point x="65.0" y="45.5" />
+            </edge>
+            <edge source="diceMaster.model.Dices" target="diceMaster.model.DiceNumbers">
+              <point x="98.0" y="-73.5" />
+              <point x="1387.3847800925926" y="256.0" />
+              <point x="1340.3847800925926" y="256.0" />
+              <point x="51.0" y="113.0" />
+            </edge>
+            <edge source="diceMaster.Main" target="diceMaster.controller.DiceMasterOverviewController">
+              <point x="163.66666666666652" y="73.0" />
+              <point x="2257.3083333333334" y="1672.0" />
+              <point x="1894.0014467592591" y="1672.0" />
+              <point x="141.25" y="-60.0" />
+            </edge>
+            <edge source="diceMaster.controller.LoginController" target="diceMaster.model.Server">
+              <point x="-184.125" y="-140.5" />
+              <point x="456.4314236111112" y="1924.0" />
+              <point x="435.4314236111112" y="1924.0" />
+              <point x="-215.625" y="86.0" />
+            </edge>
+            <edge source="diceMaster.controller.DiceMasterOverviewController" target="diceMaster.controller.InGameController">
+              <point x="-141.25" y="-60.0" />
+              <point x="1611.5014467592591" y="1672.0" />
+              <point x="1438.975" y="1672.0" />
+              <point x="-155.66666666666666" y="167.5" />
+            </edge>
+            <edge source="diceMaster.model.Server" target="diceMaster.model.GameConfigDTO">
+              <point x="-239.58333333333326" y="-86.0" />
+              <point x="411.47309027777794" y="1672.0" />
+              <point x="100.25" y="1672.0" />
+              <point x="-100.25" y="262.5" />
+            </edge>
+            <edge source="diceMaster.model.GameDTO" target="diceMaster.model.GameConfigDTO">
+              <point x="-146.79999999999995" y="-113.5" />
+              <point x="946.3462962962963" y="831.0" />
+              <point x="300.75" y="831.0" />
+              <point x="100.25" y="262.5" />
+            </edge>
+            <edge source="diceMaster.controller.GamesTableController" target="diceMaster.model.Server">
+              <point x="-214.8125" y="-208.0" />
+              <point x="1577.243923611111" y="1904.0" />
+              <point x="722.9314236111112" y="1904.0" />
+              <point x="71.875" y="86.0" />
+            </edge>
+            <edge source="diceMaster.controller.InGameController" target="diceMaster.controller.DiceMasterOverviewController">
+              <point x="155.66666666666669" y="167.5" />
+              <point x="1750.3083333333334" y="1672.0" />
+              <point x="1724.5014467592591" y="1672.0" />
+              <point x="-28.25" y="-60.0" />
+            </edge>
+            <edge source="diceMaster.controller.InGameController" target="diceMaster.model.GameEventHandler">
+              <point x="-155.66666666666663" y="-167.5" />
+              <point x="1438.9750000000001" y="1272.0" />
+              <point x="1077.3916666666667" y="1272.0" />
+              <point x="70.25" y="32.0" />
+            </edge>
+            <edge source="diceMaster.controller.InGameController" target="diceMaster.view">
+              <point x="2.8421709430404007E-14" y="-167.5" />
+              <point x="1594.6416666666669" y="1272.0" />
+              <point x="1618.4181134259259" y="1272.0" />
+              <point x="49.5" y="18.5" />
+            </edge>
+            <edge source="diceMaster.model.Server" target="diceMaster.model.UserType">
+              <point x="-143.74999999999994" y="-86.0" />
+              <point x="507.3064236111113" y="1662.0" />
+              <point x="318.43605324074076" y="1662.0" />
+              <point x="0.0" y="45.5" />
+            </edge>
+            <edge source="diceMaster.controller.LoginController" target="diceMaster.controller.DiceMasterOverviewController">
+              <point x="61.375" y="-140.5" />
+              <point x="701.9314236111112" y="1914.0" />
+              <point x="1625.6264467592591" y="1914.0" />
+              <point x="-127.125" y="60.0" />
+            </edge>
+            <edge source="diceMaster.model.Server" target="diceMaster.model.GameEventHandler">
+              <point x="143.75" y="-86.0" />
+              <point x="794.8064236111112" y="1662.0" />
+              <point x="936.8916666666667" y="1662.0" />
+              <point x="-70.25" y="32.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="0.6542016806722689" x="1341.578034682081" y="1285.5382145150932" />
+          <SelectedNodes />
+          <Categories>
+            <Category>Fields</Category>
+            <Category>Constructors</Category>
+            <Category>Methods</Category>
+          </Categories>
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>DesktopGUIPrototype</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
           <splitter-proportions>
             <option name="proportions">
               <list>

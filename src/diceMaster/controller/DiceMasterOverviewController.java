@@ -20,14 +20,13 @@ public class DiceMasterOverviewController {
         try {
             this.primaryStage.setTitle("DiceMasterPrototype");
 
-            // load layout from FXML file
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("view/InGamePane.fxml"));
             BorderPane rootLayout = (BorderPane) loader.load();
 
-            // set initial data into diceMaster.controller
-            InGameController controller = loader.getController();
-            controller.setAppController(this, 4);
+
+            InGameController inGameController = loader.getController();
+            inGameController.setAppController(this, 4);
 
             // add layout to a scene and show them all
             Scene scene = new Scene(rootLayout);

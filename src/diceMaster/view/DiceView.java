@@ -7,7 +7,7 @@ import javafx.scene.shape.Rectangle;
 import java.util.LinkedList;
 import java.util.List;
 
-public class Dice extends Group {
+public class DiceView extends Group {
     private Rectangle diceBackgroud = new Rectangle();
     private List<Circle> dotList = new LinkedList<>();
 
@@ -44,7 +44,7 @@ public class Dice extends Group {
             this.diceBackgroud.setStyle("");
     }
 
-    public Dice(){
+    public DiceView(){
         this.diceBackgroud.setArcHeight(25*diceScale);
         this.diceBackgroud.setArcWidth(25*diceScale);
         this.diceBackgroud.setFill(Paint.valueOf("WHITE"));

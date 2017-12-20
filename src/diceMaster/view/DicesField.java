@@ -6,16 +6,16 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class DicesField extends Group {
-    private List<Dice> dices = new LinkedList<>();
+    private List<DiceView> diceViews = new LinkedList<>();
     private double dicesFiledScale = 1;
 
     public DicesField() {
         for (int i = 0; i < 5; i++) {
-            Dice d = new Dice();
+            DiceView d = new DiceView();
             d.setLayoutX(0 + 100 * i * dicesFiledScale);
 
             d.setLayoutY(0);
-            this.dices.add(d);
+            this.diceViews.add(d);
             this.getChildren().add(d);
         }
     }
@@ -23,12 +23,12 @@ public class DicesField extends Group {
 
     public void setDicesDots(List<Integer> dotsToSet) {
         for (int i = 0; i < 5; i++) {
-            dices.get(i).setNumberOfDots(dotsToSet.get(i));
+            diceViews.get(i).setNumberOfDots(dotsToSet.get(i));
         }
     }
 
-    public List<Dice> getDices() {
-        return dices;
+    public List<DiceView> getDiceViews() {
+        return diceViews;
     }
 
     public double getDicesFiledScale() {
@@ -37,14 +37,14 @@ public class DicesField extends Group {
 
     public void setDicesFiledScale(double dicesFiledScale) {
         this.dicesFiledScale = dicesFiledScale;
-        for (Dice d : dices) {
+        for (DiceView d : diceViews) {
             d.setDiceScale(dicesFiledScale);
         }
         reLocate();
     }
     private void reLocate(){
         int i =0;
-        for (Dice d: dices) {
+        for (DiceView d: diceViews) {
             d.setLayoutX(0 + 100 * i * dicesFiledScale);
             d.setLayoutY(0);
             i++;

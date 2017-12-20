@@ -1,5 +1,7 @@
 package diceMaster.controller;
 
+import diceMaster.model.GameDTO;
+import diceMaster.model.GameEventHandler;
 import diceMaster.view.DicesField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -12,7 +14,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-public class InGameController {
+public class InGameController implements GameEventHandler{
     private DiceMasterOverviewController appController;
     private int numberOfPlayers = 0;
 
@@ -44,25 +46,30 @@ public class InGameController {
         List<Integer> randomDotsToSet = new LinkedList<>();
         Random rand = new Random();
         for(int i=0; i<5; i++)
-            if(dicesField.getDices().get(i).isSelected()) {
+            if(dicesField.getDiceViews().get(i).isSelected()) {
                 randomDotsToSet.add(rand.nextInt(6) + 1);
             }
             else
-                randomDotsToSet.add(dicesField.getDices().get(i).getNumberOfDots());
+                randomDotsToSet.add(dicesField.getDiceViews().get(i).getNumberOfDots());
         for(int i=0; i<5; i++)
             System.out.println(randomDotsToSet.get(i));
         dicesField.setDicesDots(randomDotsToSet);
         for(int i=0; i<5; i++)
-            if(dicesField.getDices().get(i).isSelected())
-                dicesField.getDices().get(i).setSelected(false);
+            if(dicesField.getDiceViews().get(i).isSelected())
+                dicesField.getDiceViews().get(i).setSelected(false);
         reRollButton.setDisable(true);
     }
 
     public void handleDicesFieldMouseClicked(MouseEvent mouseEvent) {
         boolean flag = false;
         for(int i=0; i<5; i++)
-            if(dicesField.getDices().get(i).isSelected())
+            if(dicesField.getDiceViews().get(i).isSelected())
                 flag=true;
         reRollButton.setDisable(!flag);
+    }
+
+    @Override
+    public void refreshGame(GameDTO game) {
+
     }
 }
