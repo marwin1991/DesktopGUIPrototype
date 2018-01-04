@@ -1,4 +1,4 @@
-package diceMaster.model;
+package dicemaster.common;
 
 public interface DTO {
     void fromJSON();

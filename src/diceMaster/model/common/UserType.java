@@ -1,4 +1,4 @@
-package diceMaster.model;
+package dicemaster.common;
 
 public enum UserType {
     PLAYER,OBSERVER;

@@ -21,6 +21,7 @@ public class DiceMasterOverviewController {
             this.primaryStage.setTitle("DiceMasterPrototype");
 
             FXMLLoader loader = new FXMLLoader();
+
             loader.setLocation(Main.class.getResource("view/InGamePane.fxml"));
             BorderPane rootLayout = (BorderPane) loader.load();
 

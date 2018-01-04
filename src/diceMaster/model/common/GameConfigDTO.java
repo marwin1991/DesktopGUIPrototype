@@ -1,28 +1,26 @@
-package diceMaster.model;
-
-import diceMaster.model.DTO;
+package dicemaster.common;
 
 public class GameConfigDTO implements DTO {
-    private String tabelName;
+    private String tableName;
     private int maxPlayers;
     private GameType gameType;
     private int hardBotsCount;
     private int easyBotsCount;
 
-    public GameConfigDTO(String tabelName, int maxPlayers, GameType gameType, int hardBotsCount, int easyBotsCount) {
-        this.tabelName = tabelName;
+    public GameConfigDTO(String tableName, int maxPlayers, GameType gameType, int hardBotsCount, int easyBotsCount) {
+        this.tableName = tableName;
         this.maxPlayers = maxPlayers;
         this.gameType = gameType;
         this.hardBotsCount = hardBotsCount;
         this.easyBotsCount = easyBotsCount;
     }
 
-    public String getTabelName() {
-        return tabelName;
+    public String getTableName() {
+        return tableName;
     }
 
-    public void setTabelName(String tabelName) {
-        this.tabelName = tabelName;
+    public void setTableName(String tableName) {
+        this.tableName = tableName;
     }
 
     public int getMaxPlayers() {

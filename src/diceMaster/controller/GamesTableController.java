@@ -1,19 +1,20 @@
 package diceMaster.controller;
 
-import diceMaster.model.GameDTO;
-import diceMaster.model.GamesTableEventHandler;
-import diceMaster.model.Server;
+import diceMaster.model.*;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 
-import javax.swing.text.html.ListView;
+import java.util.LinkedList;
 import java.util.List;
 
-public class GamesTableController implements GamesTableEventHandler {
+public class GamesTableController{
     private DiceMasterOverviewController appController;
     private Server server;
+    private ObservableList<GameDTO> listOfGames;
 
     @FXML
     BorderPane borderPane;
@@ -28,7 +29,7 @@ public class GamesTableController implements GamesTableEventHandler {
     Button joinGameAsObserverButton;
 
     @FXML
-    ListView games;
+    ListView<GameDTO> games;
 
     @FXML
     CreateGameController createGameController;
