@@ -9,8 +9,9 @@ import diceMaster.model.gui.GameEventHandler;
 import java.util.List;
 
 public interface Server {
-    boolean registerClient(String nick);
     ServerGame createGame(GameConfigDTO gameConfigDTO, GameEventHandler gameEventHandler, UserType userType);
-    ServerGame joinGame(GameDTO gameDTO, GameEventHandler gameEventHandler, UserType userType);
-    List<GameDTO> getGames();
+    ServerGame requestJoinGame(GameDTO gameDTO, GameEventHandler gameEventHandler, UserType userType);
+
+    List<GameDTO> getAvailableGames();
+    boolean registerClient(String username);
 }

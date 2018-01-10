@@ -9,7 +9,14 @@ public class GameDTO implements DTO {
     private int id;
     private GameConfigDTO gameConfig;
     private List<UserInGame> players;
-    private List<User> observers;
+    private List<String> observers;
+
+    public GameDTO(int id, GameConfigDTO gameConfig, List<UserInGame> players, List<String> observers) {
+        this.id = id;
+        this.gameConfig = gameConfig;
+        this.players = players;
+        this.observers = observers;
+    }
 
     @Override
     public void fromJSON() {

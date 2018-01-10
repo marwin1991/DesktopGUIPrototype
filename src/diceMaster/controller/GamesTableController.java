@@ -80,15 +80,15 @@ public class GamesTableController{
     public void joinAsPlayerGameActionHandler(MouseEvent mouseEvent) {
 
         //server.joinGame(null,null, null);
-        appController.goToGame();
+        appController.showGame();
     }
 
     public void refreshGamesTable(List<GameDTO> gamesTable) {
-        server.getGames();
+        server.getAvailableGames();
     }
 
     public void joinAsObserverGameActionHandler(MouseEvent mouseEvent) {
-        server.joinGame(null,null, null);
+        server.requestJoinGame(null,null, null);
     }
 
 }

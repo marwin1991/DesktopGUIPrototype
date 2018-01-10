@@ -44,9 +44,9 @@ public class CreateGameController extends Pane {
     }
 
     public void init(){
-        makeSpinnerEditabelOnlyForNumbers(maxPlayersSpinner);
-        makeSpinnerEditabelOnlyForNumbers(easyBotsSpinner);
-        makeSpinnerEditabelOnlyForNumbers(hardBotsSpinner);
+        makeSpinnerEditableOnlyForNumbers(maxPlayersSpinner);
+        makeSpinnerEditableOnlyForNumbers(easyBotsSpinner);
+        makeSpinnerEditableOnlyForNumbers(hardBotsSpinner);
     }
 
     public void setDialogStage(Stage dialogStage) {
@@ -101,7 +101,7 @@ public class CreateGameController extends Pane {
         }
     }
 
-    private void makeSpinnerEditabelOnlyForNumbers(Spinner spinner){
+    private void makeSpinnerEditableOnlyForNumbers(Spinner spinner){
         spinner.focusedProperty().addListener((s, ov, nv) -> {
             if (nv) return;
             commitEditorText(spinner);
@@ -124,11 +124,11 @@ public class CreateGameController extends Pane {
     }
 
 
-    public void showAlert(String alertMessege){
+    public void showAlert(String alertMessage){
         Alert alert = new Alert(Alert.AlertType.ERROR);
         alert.setTitle("DiceMaster - Create game");
         alert.setHeaderText("DiceMaster - Create game");
-        alert.setContentText(alertMessege);
+        alert.setContentText(alertMessage);
         alert.show();
     }
 }

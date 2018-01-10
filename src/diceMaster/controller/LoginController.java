@@ -1,21 +1,15 @@
 package diceMaster.controller;
 
-import diceMaster.Main;
-import diceMaster.model.common.User;
-import diceMaster.model.server.Server;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Text;
 
-import java.io.IOException;
-
 public class LoginController {
     private DiceMasterOverviewController diceMasterOverviewController;
-    private Server server;
 
     @FXML
     BorderPane borderPane;
@@ -29,9 +23,8 @@ public class LoginController {
     @FXML
     Button loginButton;
 
-    public void setAppController(DiceMasterOverviewController appController, Server server) {
+    public void setAppController(DiceMasterOverviewController appController) {
         this.diceMasterOverviewController = appController;
-        this.server = server;
         this.bindSizeProperties();
     }
 
@@ -39,10 +32,33 @@ public class LoginController {
     }
 
     public void handleLoginEvent(MouseEvent mouseEvent) {
-        /*if (!server.registerClient(loginText.getText())) {
-            // here alert window that coundlnt login
-        }*/
-        this.diceMasterOverviewController.goToGamesTable(server);
+        if(loginText.getText().isEmpty()){
+            showAlert("Type your nick first!");
+            return;
+        }
+        if(loginText.getText().startsWith("bot#")){
+            showAlert("Your nick can't start with \"bot#\"!");
+            return;
+        }
+        if(loginText.getText().startsWith(" ")){
+            showAlert("Your nick can't start with white character!");
+            return;
+        }
+
+        // if server will add some exceptions put here try catch
+        if (!diceMasterOverviewController.getServer().registerClient(loginText.getText())) {
+            showAlert("Couldn't login!");
+            return;
+        }
+        this.diceMasterOverviewController.showGamesTable();
+    }
+
+    public void showAlert(String alertMessage){
+        Alert alert = new Alert(Alert.AlertType.ERROR);
+        alert.setTitle("DiceMaster - Login");
+        alert.setHeaderText("DiceMaster - Login");
+        alert.setContentText(alertMessage);
+        alert.show();
     }
 }
 
