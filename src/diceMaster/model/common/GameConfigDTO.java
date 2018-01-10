@@ -1,4 +1,7 @@
-package dicemaster.common;
+package diceMaster.model.common;
+
+import diceMaster.model.common.DTO;
+import diceMaster.model.common.GameType;
 
 public class GameConfigDTO implements DTO {
     private String tableName;

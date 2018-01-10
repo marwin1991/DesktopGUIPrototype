@@ -1,4 +1,7 @@
-package dicemaster.common;
+package diceMaster.model.common;
+
+import diceMaster.model.common.DTO;
+import diceMaster.model.common.GameConfigDTO;
 
 import java.util.List;
 

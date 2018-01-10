@@ -1,15 +1,24 @@
 package diceMaster.controller;
 
-import diceMaster.model.*;
 
+import diceMaster.Main;
+import diceMaster.model.common.GameDTO;
+import diceMaster.model.server.Server;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
+import javafx.stage.Modality;
+import javafx.stage.Stage;
 
-import java.util.LinkedList;
+import java.io.IOException;
 import java.util.List;
+
 
 public class GamesTableController{
     private DiceMasterOverviewController appController;
@@ -31,8 +40,6 @@ public class GamesTableController{
     @FXML
     ListView<GameDTO> games;
 
-    @FXML
-    CreateGameController createGameController;
 
     public void setAppController(DiceMasterOverviewController appController, Server server) {
         this.appController = appController;
@@ -44,15 +51,37 @@ public class GamesTableController{
 
     }
 
+    public boolean showCreateGameDialog(){
+        try {
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(Main.class.getResource("view/CreateGameDialog.fxml"));
+            AnchorPane page = loader.load();
+            Stage dialogStage = new Stage();
+            dialogStage.setTitle("Create game");
+            dialogStage.initModality(Modality.WINDOW_MODAL);
+            dialogStage.initOwner(appController.getPrimaryStage());
+            Scene scene = new Scene(page);
+            dialogStage.setScene(scene);
+            CreateGameController presenter = loader.getController();
+            presenter.setDialogStage(dialogStage);
+            dialogStage.showAndWait();
+            return presenter.isApproved();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return false;
+    }
+
     public void createGameActionHandler(MouseEvent mouseEvent) {
-        this.createGameController = new CreateGameController();
+        showCreateGameDialog();
     }
 
     public void joinAsPlayerGameActionHandler(MouseEvent mouseEvent) {
-        server.joinGame(null,null, null);
+
+        //server.joinGame(null,null, null);
+        appController.goToGame();
     }
 
-    @Override
     public void refreshGamesTable(List<GameDTO> gamesTable) {
         server.getGames();
     }
@@ -60,4 +89,5 @@ public class GamesTableController{
     public void joinAsObserverGameActionHandler(MouseEvent mouseEvent) {
         server.joinGame(null,null, null);
     }
+
 }

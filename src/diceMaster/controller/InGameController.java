@@ -1,8 +1,8 @@
 package diceMaster.controller;
 
-import diceMaster.model.GameDTO;
-import diceMaster.model.GameEventHandler;
-import diceMaster.model.ServerGame;
+import diceMaster.model.common.GameDTO;
+import diceMaster.model.gui.GameEventHandler;
+import diceMaster.model.server.ServerGame;
 import diceMaster.view.DicesField;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -15,7 +15,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
-public class InGameController implements GameEventHandler{
+public class InGameController implements GameEventHandler {
     private DiceMasterOverviewController appController;
     private ServerGame serverGame;
     private int numberOfPlayers = 0;
@@ -61,7 +61,7 @@ public class InGameController implements GameEventHandler{
                 dicesField.getDiceViews().get(i).setSelected(false);
         reRollButton.setDisable(true);
 
-        //dicesField.setDicesFiledScale(0.5);
+        dicesField.setDicesFiledScale(0.5);
         //serverGame.makeMove(null);
     }
 
@@ -72,6 +72,7 @@ public class InGameController implements GameEventHandler{
                 flag=true;
         reRollButton.setDisable(!flag);
     }
+
 
     @Override
     public void refreshGame(GameDTO game) {

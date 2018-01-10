@@ -2,26 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c9b85a78-ac97-4457-8dac-e7e5f9f49030" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/model/DTO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/model/DiceNumbers.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/model/Dices.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/model/GameConfigDTO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/model/GameDTO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/model/GameEventHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/model/GameType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/model/GamesTableEventHandler.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/model/MoveDTO.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/model/Server.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/model/ServerGame.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/model/Triplet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/model/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/model/UserType.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/diceMaster/controller/CreateGameController.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/controller/DiceMasterOverviewController.class" afterPath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/controller/DiceMasterOverviewController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/controller/InGameController.class" afterPath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/controller/InGameController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/view/LoginPane.fxml" afterPath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/view/LoginPane.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/controller/DiceMasterOverviewController.java" afterPath="$PROJECT_DIR$/src/diceMaster/controller/DiceMasterOverviewController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/controller/GamesTableController.java" afterPath="$PROJECT_DIR$/src/diceMaster/controller/GamesTableController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/controller/InGameController.java" afterPath="$PROJECT_DIR$/src/diceMaster/controller/InGameController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/controller/LoginController.java" afterPath="$PROJECT_DIR$/src/diceMaster/controller/LoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/model/common/DTO.java" afterPath="$PROJECT_DIR$/src/diceMaster/model/common/DTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/model/common/DiceNumbers.java" afterPath="$PROJECT_DIR$/src/diceMaster/model/common/DiceNumbers.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/model/common/Dices.java" afterPath="$PROJECT_DIR$/src/diceMaster/model/common/Dices.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/model/common/GameConfigDTO.java" afterPath="$PROJECT_DIR$/src/diceMaster/model/common/GameConfigDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/model/common/GameDTO.java" afterPath="$PROJECT_DIR$/src/diceMaster/model/common/GameDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/model/common/GameType.java" afterPath="$PROJECT_DIR$/src/diceMaster/model/common/GameType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/model/common/MoveDTO.java" afterPath="$PROJECT_DIR$/src/diceMaster/model/common/MoveDTO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/model/common/User.java" afterPath="$PROJECT_DIR$/src/diceMaster/model/common/User.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/model/common/UserInGame.java" afterPath="$PROJECT_DIR$/src/diceMaster/model/common/UserInGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/model/common/UserType.java" afterPath="$PROJECT_DIR$/src/diceMaster/model/common/UserType.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/model/gui/GameEventHandler.java" afterPath="$PROJECT_DIR$/src/diceMaster/model/gui/GameEventHandler.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/model/server/Server.java" afterPath="$PROJECT_DIR$/src/diceMaster/model/server/Server.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/model/server/ServerGame.java" afterPath="$PROJECT_DIR$/src/diceMaster/model/server/ServerGame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/diceMaster/view/LoginPane.fxml" afterPath="$PROJECT_DIR$/src/diceMaster/view/LoginPane.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -33,86 +36,68 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="JAVA/diceMaster" pinned="false" current-in-tab="true">
-        <entry file="uml://JAVA/diceMaster">
-          <provider selected="true" editor-type-id="UmlEditorProvider">
-            <state>
-              <ID>JAVA</ID>
-              <OriginalElement>diceMaster</OriginalElement>
-              <nodes>
-                <node x="0.0" y="197.201171875">diceMaster.Main</node>
-                <node x="679.75" y="681.201171875">diceMaster.controller.GamesTableController</node>
-                <node x="924.875" y="539.201171875">diceMaster.controller.CreateGameController</node>
-                <node x="629.0" y="2.201171875">diceMaster.view</node>
-                <node x="340.9821428571429" y="511.201171875">diceMaster.controller.DiceMasterOverviewController</node>
-                <node x="511.0" y="89.201171875">diceMaster.controller.InGameController</node>
-                <node x="168.75" y="762.201171875">diceMaster.controller.LoginController</node>
-              </nodes>
-              <notes />
-              <edges>
-                <edge source="diceMaster.Main" target="diceMaster.controller.DiceMasterOverviewController">
-                  <point x="0.0" y="73.0" />
-                  <point x="245.5" y="481.201171875" />
-                  <point x="425.7321428571429" y="481.201171875" />
-                  <point x="-84.75" y="-60.0" />
-                </edge>
-                <edge source="diceMaster.view" target="diceMaster.view">
-                  <point x="-16.5" y="18.5" />
-                  <point x="678.5" y="69.201171875" />
-                  <point x="599.0" y="69.201171875" />
-                  <point x="599.0" y="20.701171875" />
-                  <point x="-66.0" y="-0.0" />
-                </edge>
-                <edge source="diceMaster.controller.GamesTableController" target="diceMaster.controller.DiceMasterOverviewController">
-                  <point x="-61.375" y="-221.5" />
-                  <point x="863.875" y="651.201171875" />
-                  <point x="637.6071428571429" y="651.201171875" />
-                  <point x="127.125" y="60.0" />
-                </edge>
-                <edge source="diceMaster.controller.DiceMasterOverviewController" target="diceMaster.controller.InGameController">
-                  <point x="28.25" y="-60.0" />
-                  <point x="538.7321428571429" y="491.201171875" />
-                  <point x="588.8333333333334" y="491.201171875" />
-                  <point x="-155.66666666666663" y="181.0" />
-                </edge>
-                <edge source="diceMaster.controller.DiceMasterOverviewController" target="diceMaster.Main">
-                  <point x="-141.25" y="-60.0" />
-                  <point x="369.2321428571429" y="491.201171875" />
-                  <point x="81.83333333333337" y="491.201171875" />
-                  <point x="-163.66666666666663" y="73.0" />
-                </edge>
-                <edge source="diceMaster.controller.GamesTableController" target="diceMaster.controller.CreateGameController">
-                  <point x="61.375" y="-221.5" />
-                  <point x="-61.75" y="32.0" />
-                </edge>
-                <edge source="diceMaster.controller.InGameController" target="diceMaster.controller.DiceMasterOverviewController">
-                  <point x="155.66666666666663" y="181.0" />
-                  <point x="900.1666666666666" y="491.201171875" />
-                  <point x="651.7321428571429" y="491.201171875" />
-                  <point x="141.25" y="-60.0" />
-                </edge>
-                <edge source="diceMaster.controller.InGameController" target="diceMaster.view">
-                  <point x="0.0" y="-181.0" />
-                  <point x="49.5" y="18.5" />
-                </edge>
-                <edge source="diceMaster.controller.LoginController" target="diceMaster.controller.DiceMasterOverviewController">
-                  <point x="-122.75" y="-140.5" />
-                  <point x="291.5" y="661.201171875" />
-                  <point x="383.3571428571429" y="661.201171875" />
-                  <point x="-127.125" y="60.0" />
-                </edge>
-              </edges>
-              <settings layout="Hierarchic Group" zoom="0.7397379912663755" x="586.3175914994097" y="622.5" />
-              <SelectedNodes />
-              <Categories>
-                <Category>Fields</Category>
-                <Category>Constructors</Category>
-                <Category>Methods</Category>
-                <Category>Properties</Category>
-                <Category>Inner Classes</Category>
-              </Categories>
-              <SCOPE>All</SCOPE>
-              <VISIBILITY>private</VISIBILITY>
+      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/diceMaster/model/common/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GamesTableController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/GamesTableController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="415">
+              <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2116#2117#0" expanded="true" />
+                <element signature="e#2154#2155#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateGameController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/CreateGameController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="73" selection-end-column="19" />
+              <folding>
+                <element signature="e#887#888#0" expanded="true" />
+                <element signature="e#934#935#0" expanded="true" />
+                <element signature="e#969#970#0" expanded="true" />
+                <element signature="e#1000#1001#0" expanded="true" />
+                <element signature="e#1412#1413#0" expanded="true" />
+                <element signature="e#1447#1448#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CreateGameDialog.fxml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/diceMaster/view/CreateGameDialog.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="75" column="41" lean-forward="true" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DiceMasterOverviewController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/DiceMasterOverviewController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+              <folding>
+                <element signature="e#364#365#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,6 +108,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="FxmlFile" />
       </list>
     </option>
   </component>
@@ -154,18 +140,34 @@
         <option value="$PROJECT_DIR$/src/diceMaster/model/GameType.java" />
         <option value="$PROJECT_DIR$/src/diceMaster/model/GamesTableEventHandler.java" />
         <option value="$PROJECT_DIR$/src/diceMaster/model/GameEventHandler.java" />
-        <option value="$PROJECT_DIR$/src/diceMaster/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/diceMaster/controller/GameTabelController.java" />
-        <option value="$PROJECT_DIR$/src/diceMaster/view/LoginPane.fxml" />
         <option value="$PROJECT_DIR$/src/diceMaster/view/createGamePane.java" />
         <option value="$PROJECT_DIR$/src/diceMaster/controller/CreateGamePane.java" />
-        <option value="$PROJECT_DIR$/src/diceMaster/controller/CreateGameController.java" />
         <option value="$PROJECT_DIR$/src/diceMaster/view/GamesTablePane.fxml" />
-        <option value="$PROJECT_DIR$/src/diceMaster/controller/InGameController.java" />
         <option value="$PROJECT_DIR$/src/diceMaster/model/GameDTO.java" />
-        <option value="$PROJECT_DIR$/src/diceMaster/controller/DiceMasterOverviewController.java" />
         <option value="$PROJECT_DIR$/src/diceMaster/model/Server.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/common/DiceNumbers.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/common/Dices.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/common/DTO.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/common/GameType.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/common/GameConfigDTO.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/common/GameDTO.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/common/UserType.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/common/UserInGame.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/gui/GameEventHandler.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/common/MoveDTO.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/server/ServerGame.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/server/Server.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/view/LoginPane.fxml" />
+        <option value="$PROJECT_DIR$/src/diceMaster/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/controller/InGameController.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/model/common/User.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/controller/DiceMasterOverviewController.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/presenter/CreateGameController.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/presenter/CreateGamePresenter.java" />
         <option value="$PROJECT_DIR$/src/diceMaster/controller/GamesTableController.java" />
+        <option value="$PROJECT_DIR$/src/diceMaster/view/CreateGameDialog.fxml" />
+        <option value="$PROJECT_DIR$/src/diceMaster/controller/CreateGameController.java" />
       </list>
     </option>
   </component>
@@ -175,7 +177,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1938" />
@@ -199,8 +201,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -257,12 +257,21 @@
               <item name="model" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="DesktopGUIPrototype" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DesktopGUIPrototype" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="diceMaster" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -413,30 +422,37 @@
       <workItem from="1513855200767" duration="2979000" />
       <workItem from="1515004085377" duration="34000" />
       <workItem from="1515061334328" duration="151000" />
-      <workItem from="1515061504266" duration="397000" />
+      <workItem from="1515061504266" duration="2717000" />
+      <workItem from="1515065502855" duration="2737000" />
+      <workItem from="1515078379401" duration="42000" />
+      <workItem from="1515078695951" duration="1215000" />
+      <workItem from="1515588578468" duration="6358000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11778000" />
+    <option name="totallyTimeSpent" value="24450000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32747254" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32671082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -447,9 +463,7 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -472,11 +486,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32671082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -489,94 +503,11 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/Server.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameDTO.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameConfigDTO.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/InGamePane.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/ServerGame.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/InGameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="39" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/GamesTableController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/LoginPane.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/MoveDTO.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameType.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GamesTableEventHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameEventHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameDTO.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameConfigDTO.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/GamesTablePane.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" column="46" lean-forward="false" selection-start-line="10" selection-start-column="46" selection-end-line="10" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/CreateTabelController.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/LoginPane.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="57" lean-forward="false" selection-start-line="14" selection-start-column="57" selection-end-line="14" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="399">
@@ -588,21 +519,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/diceMaster/view/InGamePane.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/InGameController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="714">
           <caret line="34" column="44" lean-forward="false" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -640,28 +573,10 @@
     <entry file="file://$PROJECT_DIR$/src/diceMaster/model/UserType.java" />
     <entry file="file://$PROJECT_DIR$/src/diceMaster/model/User.java" />
     <entry file="file://$PROJECT_DIR$/src/diceMaster/model/Triplet.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="39" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/diceMaster/model/MoveDTO.java" />
     <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameType.java" />
     <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GamesTableEventHandler.java" />
     <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameEventHandler.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/CreateGameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/diceMaster/view/DicesField.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -670,73 +585,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/LoginPane.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/GamesTablePane.fxml">
-      <provider selected="true" editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="200" lean-forward="false" selection-start-line="13" selection-start-column="200" selection-end-line="13" selection-end-column="200" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameConfigDTO.java" />
     <entry file="file://$PROJECT_DIR$/src/diceMaster/model/GameDTO.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/InGameController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="63" column="10" lean-forward="false" selection-start-line="63" selection-start-column="10" selection-end-line="63" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/diceMaster/model/Server.java" />
     <entry file="file://$PROJECT_DIR$/src/diceMaster/model/ServerGame.java" />
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/DiceMasterOverviewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/GamesTableController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="9" lean-forward="true" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/diceMaster/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/InGamePane.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -751,9 +607,54 @@
           </nodes>
           <notes />
           <edges />
-          <settings layout="Hierarchic Group" zoom="1.0" x="124.0" y="18.5" />
+          <settings layout="Hierarchic Group" zoom="1.0" x="124.0" y="19.0" />
           <SelectedNodes />
           <Categories />
+          <SCOPE>All</SCOPE>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/common/DTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="32" lean-forward="true" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/common/UserType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="17" lean-forward="false" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/gui/GameEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" column="31" lean-forward="false" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/server/ServerGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="27" lean-forward="false" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/server/Server.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -763,79 +664,241 @@
           <ID>JAVA</ID>
           <OriginalElement>diceMaster</OriginalElement>
           <nodes>
-            <node x="0.0" y="197.201171875">diceMaster.Main</node>
-            <node x="679.75" y="681.201171875">diceMaster.controller.GamesTableController</node>
-            <node x="924.875" y="539.201171875">diceMaster.controller.CreateGameController</node>
-            <node x="629.0" y="2.201171875">diceMaster.view</node>
-            <node x="340.9821428571429" y="511.201171875">diceMaster.controller.DiceMasterOverviewController</node>
-            <node x="511.0" y="89.201171875">diceMaster.controller.InGameController</node>
-            <node x="168.75" y="762.201171875">diceMaster.controller.LoginController</node>
+            <node x="" y="">diceMaster.model.server.ServerGame</node>
+            <node x="" y="">diceMaster.model.common.GameConfigDTO</node>
+            <node x="" y="">diceMaster.Main</node>
+            <node x="" y="">diceMaster.model.common.DiceNumbers</node>
+            <node x="" y="">diceMaster.model.server.Server</node>
+            <node x="" y="">diceMaster.controller.GamesTableController</node>
+            <node x="" y="">diceMaster.controller.CreateGameController</node>
+            <node x="" y="">diceMaster.model.gui.GameEventHandler</node>
+            <node x="" y="">diceMaster.model.common.GameDTO</node>
+            <node x="" y="">diceMaster.model.common.Dices</node>
+            <node x="" y="">diceMaster.model.common.UserInGame</node>
+            <node x="" y="">diceMaster.model.common.User</node>
+            <node x="" y="">diceMaster.model.common.DTO</node>
+            <node x="" y="">diceMaster.model.common.UserType</node>
+            <node x="" y="">diceMaster.model.common.MoveDTO</node>
+            <node x="" y="">diceMaster.view</node>
+            <node x="" y="">diceMaster.controller.DiceMasterOverviewController</node>
+            <node x="" y="">diceMaster.model.common.GameType</node>
+            <node x="" y="">diceMaster.controller.InGameController</node>
+            <node x="" y="">diceMaster.controller.LoginController</node>
           </nodes>
           <notes />
-          <edges>
-            <edge source="diceMaster.Main" target="diceMaster.controller.DiceMasterOverviewController">
-              <point x="0.0" y="73.0" />
-              <point x="245.5" y="481.201171875" />
-              <point x="425.7321428571429" y="481.201171875" />
-              <point x="-84.75" y="-60.0" />
-            </edge>
-            <edge source="diceMaster.view" target="diceMaster.view">
-              <point x="-16.5" y="18.5" />
-              <point x="678.5" y="69.201171875" />
-              <point x="599.0" y="69.201171875" />
-              <point x="599.0" y="20.701171875" />
-              <point x="-66.0" y="-0.0" />
-            </edge>
-            <edge source="diceMaster.controller.GamesTableController" target="diceMaster.controller.DiceMasterOverviewController">
-              <point x="-61.375" y="-221.5" />
-              <point x="863.875" y="651.201171875" />
-              <point x="637.6071428571429" y="651.201171875" />
-              <point x="127.125" y="60.0" />
-            </edge>
-            <edge source="diceMaster.controller.DiceMasterOverviewController" target="diceMaster.controller.InGameController">
-              <point x="28.25" y="-60.0" />
-              <point x="538.7321428571429" y="491.201171875" />
-              <point x="588.8333333333334" y="491.201171875" />
-              <point x="-155.66666666666663" y="181.0" />
-            </edge>
-            <edge source="diceMaster.controller.DiceMasterOverviewController" target="diceMaster.Main">
-              <point x="-141.25" y="-60.0" />
-              <point x="369.2321428571429" y="491.201171875" />
-              <point x="81.83333333333337" y="491.201171875" />
-              <point x="-163.66666666666663" y="73.0" />
-            </edge>
-            <edge source="diceMaster.controller.GamesTableController" target="diceMaster.controller.CreateGameController">
-              <point x="61.375" y="-221.5" />
-              <point x="-61.75" y="32.0" />
-            </edge>
-            <edge source="diceMaster.controller.InGameController" target="diceMaster.controller.DiceMasterOverviewController">
-              <point x="155.66666666666663" y="181.0" />
-              <point x="900.1666666666666" y="491.201171875" />
-              <point x="651.7321428571429" y="491.201171875" />
-              <point x="141.25" y="-60.0" />
-            </edge>
-            <edge source="diceMaster.controller.InGameController" target="diceMaster.view">
-              <point x="0.0" y="-181.0" />
-              <point x="49.5" y="18.5" />
-            </edge>
-            <edge source="diceMaster.controller.LoginController" target="diceMaster.controller.DiceMasterOverviewController">
-              <point x="-122.75" y="-140.5" />
-              <point x="291.5" y="661.201171875" />
-              <point x="383.3571428571429" y="661.201171875" />
-              <point x="-127.125" y="60.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="0.7397379912663755" x="586.3175914994097" y="622.5" />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="0.6261455525606469" x="1095.0" y="1987.0" />
           <SelectedNodes />
           <Categories>
             <Category>Fields</Category>
             <Category>Constructors</Category>
             <Category>Methods</Category>
-            <Category>Properties</Category>
-            <Category>Inner Classes</Category>
           </Categories>
           <SCOPE>All</SCOPE>
           <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="470">
+          <caret line="44" column="65" lean-forward="false" selection-start-line="44" selection-start-column="65" selection-end-line="44" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/GamesTablePane.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="12" column="193" lean-forward="false" selection-start-line="12" selection-start-column="193" selection-end-line="12" selection-end-column="193" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/InGameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="806">
+          <caret line="63" column="8" lean-forward="false" selection-start-line="63" selection-start-column="8" selection-end-line="63" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/common/GameType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="21" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/common/GameConfigDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1008">
+          <caret line="70" column="0" lean-forward="true" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/common/MoveDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/common/DiceNumbers.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/common/Dices.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/common/UserInGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="37" lean-forward="true" selection-start-line="2" selection-start-column="37" selection-end-line="2" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../to-javafx-adv-2017-2/to-javafx-4/src/main/java/pl/edu/agh/iisg/to/javafx/cw4/controller/AccountOverviewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1407">
+          <caret line="80" column="0" lean-forward="true" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../to-javafx-adv-2017-2/to-javafx-4/src/main/java/pl/edu/agh/iisg/to/javafx/cw4/controller/AccountAppController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="64" column="43" lean-forward="false" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/common/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/LoginPane.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="399">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding>
+            <marker date="1515063711770" expanded="true" signature="921:946" ph="..." />
+          </folding>
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/GamesTableController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="71" column="20" lean-forward="true" selection-start-line="71" selection-start-column="20" selection-end-line="71" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2116#2117#0" expanded="true" />
+            <element signature="e#2154#2155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/DiceMasterOverviewController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="13" column="36" lean-forward="false" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+          <folding>
+            <element signature="e#364#365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/InGamePane.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../to-javafx-adv-2017-2/to-javafx-4/src/main/java/pl/edu/agh/iisg/to/javafx/cw4/presenter/TransactionEditDialogPresenter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="63" column="12" lean-forward="false" selection-start-line="63" selection-start-column="12" selection-end-line="63" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../MP3Editor/src/java/Application/FileDroppedEventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="54" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/model/common/GameDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/view/CreateGameDialog.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="75" column="41" lean-forward="true" selection-start-line="75" selection-start-column="41" selection-end-line="75" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/diceMaster/controller/CreateGameController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="63" column="33" lean-forward="true" selection-start-line="63" selection-start-column="33" selection-end-line="73" selection-end-column="19" />
+          <folding>
+            <element signature="e#887#888#0" expanded="true" />
+            <element signature="e#934#935#0" expanded="true" />
+            <element signature="e#969#970#0" expanded="true" />
+            <element signature="e#1000#1001#0" expanded="true" />
+            <element signature="e#1412#1413#0" expanded="true" />
+            <element signature="e#1447#1448#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

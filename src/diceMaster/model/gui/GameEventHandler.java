@@ -1,6 +1,6 @@
-package dicemaster.gui;
+package diceMaster.model.gui;
 
-import dicemaster.common.GameDTO;
+import diceMaster.model.common.GameDTO;
 
 public interface GameEventHandler {
     void refreshGame(GameDTO game);

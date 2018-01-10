@@ -1,7 +1,7 @@
-package dicemaster.server;
+package diceMaster.model.server;
 
-import dicemaster.common.GameDTO;
-import dicemaster.common.MoveDTO;
+import diceMaster.model.common.GameDTO;
+import diceMaster.model.common.MoveDTO;
 
 public class ServerGame {
     private GameDTO gameDTO;

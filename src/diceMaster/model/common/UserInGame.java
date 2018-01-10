@@ -1,4 +1,7 @@
-package dicemaster.common;
+package diceMaster.model.common;
+
+import diceMaster.model.common.Dices;
+import diceMaster.model.common.User;
 
 public class UserInGame {
     private User user;

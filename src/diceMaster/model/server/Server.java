@@ -1,9 +1,10 @@
-package dicemaster.server;
+package diceMaster.model.server;
 
-import dicemaster.common.GameConfigDTO;
-import dicemaster.common.GameDTO;
-import dicemaster.common.UserType;
-import dicemaster.gui.GameEventHandler;
+import diceMaster.model.common.GameConfigDTO;
+import diceMaster.model.common.GameDTO;
+import diceMaster.model.common.UserType;
+import diceMaster.model.gui.GameEventHandler;
+
 
 import java.util.List;
 
