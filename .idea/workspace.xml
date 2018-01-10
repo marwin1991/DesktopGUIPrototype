@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c9b85a78-ac97-4457-8dac-e7e5f9f49030" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/controller/InGameController.class" afterPath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/controller/InGameController.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/view/InGamePane.fxml" afterPath="$PROJECT_DIR$/out/production/DesktopGUIPrototype/diceMaster/view/InGamePane.fxml" />
-      <change beforePath="$PROJECT_DIR$/src/diceMaster/controller/InGameController.java" afterPath="$PROJECT_DIR$/src/diceMaster/controller/InGameController.java" />
-      <change beforePath="$PROJECT_DIR$/src/diceMaster/model/common/User.java" afterPath="$PROJECT_DIR$/src/diceMaster/model/common/User.java" />
-      <change beforePath="$PROJECT_DIR$/src/diceMaster/view/InGamePane.fxml" afterPath="$PROJECT_DIR$/src/diceMaster/view/InGamePane.fxml" />
-    </list>
+    <list default="true" id="c9b85a78-ac97-4457-8dac-e7e5f9f49030" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -188,7 +181,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-9" />
     <option name="y" value="-9" />
     <option name="width" value="1386" />
@@ -442,15 +435,15 @@
       <workItem from="1515078379401" duration="42000" />
       <workItem from="1515078695951" duration="1215000" />
       <workItem from="1515588578468" duration="6358000" />
-      <workItem from="1515599029113" duration="10413000" />
+      <workItem from="1515599029113" duration="10799000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34863000" />
+    <option name="totallyTimeSpent" value="35249000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
