@@ -7,14 +7,15 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class UserInGameListView extends Group {
-    private List<UserInGame> players = new LinkedList<>();
 
-    public UserInGameListView() {
-        for (int i = 0; i < 5; i++) {
-            UserInGameFilled u = new UserInGameFilled();
-            u.setLayoutY(0 + 20 * i);
-
+    public UserInGameListView(List<UserInGame> usersInGame) {
+        int i = 0;
+        for (UserInGame userInGame: usersInGame) {
+            UserInGameFilled u = new UserInGameFilled(userInGame);
+            u.setLayoutY(20 * i);
             this.getChildren().add(u);
+
+            i++;
         }
     }
 }

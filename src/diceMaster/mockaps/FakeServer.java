@@ -41,4 +41,19 @@ public class FakeServer implements Server {
     public boolean registerClient(String username) {
         return true;
     }
+
+    public GameDTO getGameDTO(){
+        List<UserInGame> players = new LinkedList<>();
+
+        for(int i=0; i<7; i++){
+            String nick = "Player" + 1;
+            UserInGame u = new UserInGame(new User(nick),null, i + 15, false);
+
+            if(i == 5) u.setHisTurn(true);
+
+            players.add(u);
+        }
+
+        return new GameDTO(3, null, players, null);
+    }
 }

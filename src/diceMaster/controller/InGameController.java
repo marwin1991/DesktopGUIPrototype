@@ -1,5 +1,6 @@
 package diceMaster.controller;
 
+import diceMaster.mockaps.FakeServer;
 import diceMaster.model.common.GameDTO;
 import diceMaster.model.common.UserInGame;
 import diceMaster.model.gui.GameEventHandler;
@@ -51,6 +52,28 @@ public class InGameController implements GameEventHandler {
         this.numberOfPlayers = numberOfPlayers;
         this.bindSizeProperties();
         this.dicesField.setDicesFiledScale(1);
+
+        GameDTO gameDTO = new FakeServer().getGameDTO();
+        List<UserInGame> beforeMove = new LinkedList<>();
+        List<UserInGame> afterMove = new LinkedList<>();
+        UserInGame current;
+        boolean foundCurrentPlayer = false;
+
+        for(UserInGame player: gameDTO.getPlayers()){
+            if(player.isHisTurn()){
+                foundCurrentPlayer = true;
+                current = player;
+            }
+
+            if(foundCurrentPlayer){
+                afterMove.add(player);
+            } else {
+                beforeMove.add(player);
+            }
+        }
+
+        this.currentUser = new UserInGameFilled(current);
+
     }
 
     private void bindSizeProperties(){
