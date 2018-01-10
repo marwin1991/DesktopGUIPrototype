@@ -64,6 +64,7 @@ public class GamesTableController{
             dialogStage.setScene(scene);
             CreateGameController presenter = loader.getController();
             presenter.setDialogStage(dialogStage);
+            presenter.init();
             dialogStage.showAndWait();
             return presenter.isApproved();
         } catch (IOException e) {
