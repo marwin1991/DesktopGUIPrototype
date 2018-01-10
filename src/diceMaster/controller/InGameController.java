@@ -56,13 +56,12 @@ public class InGameController implements GameEventHandler {
         GameDTO gameDTO = new FakeServer().getGameDTO();
         List<UserInGame> beforeMove = new LinkedList<>();
         List<UserInGame> afterMove = new LinkedList<>();
-        UserInGame current;
         boolean foundCurrentPlayer = false;
 
         for(UserInGame player: gameDTO.getPlayers()){
             if(player.isHisTurn()){
                 foundCurrentPlayer = true;
-                current = player;
+                this.currentUser = new UserInGameFilled(player);
             }
 
             if(foundCurrentPlayer){
@@ -72,8 +71,8 @@ public class InGameController implements GameEventHandler {
             }
         }
 
-        this.currentUser = new UserInGameFilled(current);
-
+        this.playersMoved = new UserInGameListView(afterMove);
+        this.playersWaitingForMove = new UserInGameListView(beforeMove);
     }
 
     private void bindSizeProperties(){
