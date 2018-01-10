@@ -6,6 +6,10 @@ import diceMaster.model.common.GameConfigDTO;
 import java.util.List;
 
 public class GameDTO implements DTO {
+    public int getId() {
+        return id;
+    }
+
     private int id;
 
     public GameConfigDTO getGameConfig() {
