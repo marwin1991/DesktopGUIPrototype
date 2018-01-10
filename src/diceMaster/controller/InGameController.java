@@ -6,6 +6,7 @@ import diceMaster.model.gui.GameEventHandler;
 import diceMaster.model.server.ServerGame;
 import diceMaster.view.DicesField;
 import diceMaster.view.UserInGameFilled;
+import diceMaster.view.UserInGameListView;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -38,6 +39,12 @@ public class InGameController implements GameEventHandler {
 
     @FXML
     UserInGameFilled currentUser;
+
+    @FXML
+    UserInGameListView playersWaitingForMove;
+
+    @FXML
+    UserInGameListView playersMoved;
 
     public void setAppController(DiceMasterOverviewController appController, int numberOfPlayers) {
         this.appController = appController;
