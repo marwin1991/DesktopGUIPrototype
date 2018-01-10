@@ -1,12 +1,16 @@
 package diceMaster.controller;
 
 import diceMaster.model.common.GameDTO;
+import diceMaster.model.common.UserInGame;
 import diceMaster.model.gui.GameEventHandler;
 import diceMaster.model.server.ServerGame;
 import diceMaster.view.DicesField;
+import diceMaster.view.UserInGameFilled;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import javafx.scene.control.ListView;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.shape.Line;
@@ -31,6 +35,9 @@ public class InGameController implements GameEventHandler {
 
     @FXML
     Line splitGameWindowLine;
+
+    @FXML
+    UserInGameFilled currentUser;
 
     public void setAppController(DiceMasterOverviewController appController, int numberOfPlayers) {
         this.appController = appController;
@@ -61,7 +68,7 @@ public class InGameController implements GameEventHandler {
                 dicesField.getDiceViews().get(i).setSelected(false);
         reRollButton.setDisable(true);
 
-        dicesField.setDicesFiledScale(0.5);
+        dicesField.setDicesFiledScale(0.1);
         //serverGame.makeMove(null);
     }
 
