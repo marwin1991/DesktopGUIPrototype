@@ -7,6 +7,19 @@ import java.util.List;
 
 public class GameDTO implements DTO {
     private int id;
+
+    public GameConfigDTO getGameConfig() {
+        return gameConfig;
+    }
+
+    public List<UserInGame> getPlayers() {
+        return players;
+    }
+
+    public List<String> getObservers() {
+        return observers;
+    }
+
     private GameConfigDTO gameConfig;
     private List<UserInGame> players;
     private List<String> observers;

@@ -3,13 +3,14 @@ package diceMaster.controller;
 
 import diceMaster.Main;
 import diceMaster.model.common.GameDTO;
-import diceMaster.model.server.Server;
+import javafx.beans.property.SimpleObjectProperty;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
+import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
@@ -17,12 +18,11 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 import java.io.IOException;
-import java.util.List;
+
 
 
 public class GamesTableController{
-    private DiceMasterOverviewController appController;
-    private Server server;
+    private DiceMasterOverviewController diceMasterOverviewController;
     private ObservableList<GameDTO> listOfGames;
 
     @FXML
@@ -38,13 +38,37 @@ public class GamesTableController{
     Button joinGameAsObserverButton;
 
     @FXML
-    ListView<GameDTO> games;
+    TableView<GameDTO> gamesTable;
+
+    @FXML
+    TableColumn<GameDTO, String> tableNameColumn;
+
+    @FXML
+    TableColumn<GameDTO, Integer> playersOnTableColumn;
+
+    @FXML
+    TableColumn<GameDTO, Integer> easyBotsNumberColumn;
+
+    @FXML
+    TableColumn<GameDTO, Integer> hardBotsNumberColumn;
 
 
-    public void setAppController(DiceMasterOverviewController appController, Server server) {
-        this.appController = appController;
-        this.server = server;
+
+    public void setDiceMasterOverviewController(DiceMasterOverviewController appController) {
+        this.diceMasterOverviewController = appController;
+        this.listOfGames = FXCollections.observableArrayList();
         this.bindSizeProperties();
+        this.init();
+    }
+
+    public void init(){
+        this.gamesTable.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        this.tableNameColumn.setCellValueFactory(dataValue ->  new SimpleStringProperty(dataValue.getValue().getGameConfig().getTableName()));
+        this.playersOnTableColumn.setCellValueFactory(dataValue ->  new SimpleObjectProperty<Integer>(dataValue.getValue().getPlayers().size()));
+        this.easyBotsNumberColumn.setCellValueFactory(dataValue ->  new SimpleObjectProperty<Integer>(dataValue.getValue().getGameConfig().getEasyBotsCount()));
+        this.hardBotsNumberColumn.setCellValueFactory(dataValue ->  new SimpleObjectProperty<Integer>(dataValue.getValue().getGameConfig().getHardBotsCount()));
+        this.listOfGames.addAll(this.diceMasterOverviewController.getServer().getAvailableGames());
+        this.gamesTable.setItems(listOfGames);
     }
 
     private void bindSizeProperties(){
@@ -59,7 +83,7 @@ public class GamesTableController{
             Stage dialogStage = new Stage();
             dialogStage.setTitle("Create game");
             dialogStage.initModality(Modality.WINDOW_MODAL);
-            dialogStage.initOwner(appController.getPrimaryStage());
+            dialogStage.initOwner(this.diceMasterOverviewController.getPrimaryStage());
             Scene scene = new Scene(page);
             dialogStage.setScene(scene);
             CreateGameController presenter = loader.getController();
@@ -80,15 +104,16 @@ public class GamesTableController{
     public void joinAsPlayerGameActionHandler(MouseEvent mouseEvent) {
 
         //server.joinGame(null,null, null);
-        appController.showGame();
+        diceMasterOverviewController.showGame();
     }
 
-    public void refreshGamesTable(List<GameDTO> gamesTable) {
-        server.getAvailableGames();
+    public void refreshGamesTable() {
+        this.listOfGames.clear();
+        this.listOfGames.addAll(this.diceMasterOverviewController.getServer().getAvailableGames());
     }
 
     public void joinAsObserverGameActionHandler(MouseEvent mouseEvent) {
-        server.requestJoinGame(null,null, null);
+        diceMasterOverviewController.getServer().requestJoinGame(null,null, null);
     }
 
 }

@@ -9,20 +9,17 @@ import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Timer;
 
 public class DiceMasterOverviewController {
-
-    public Stage getPrimaryStage() {
-        return primaryStage;
-    }
 
     private Stage primaryStage;
 
     private Server server;
 
-    public Server getServer() {
-        return server;
-    }
+    private AvailableGamesChecker avalibleGamesChecker;
+
+    private Timer timer;
 
     public DiceMasterOverviewController(Stage primaryStage) {
         this.primaryStage = primaryStage;
@@ -55,7 +52,12 @@ public class DiceMasterOverviewController {
             loader.setLocation(Main.class.getResource("view/GamesTablePane.fxml"));
             BorderPane rootLayout = loader.load();
             GamesTableController gamesTableController = loader.getController();
-            gamesTableController.setAppController(this, this.server);
+            gamesTableController.setDiceMasterOverviewController(this);
+
+            this.avalibleGamesChecker = new AvailableGamesChecker(gamesTableController);
+            this.timer = new Timer(true);
+            this.timer.schedule(avalibleGamesChecker,0,1000);
+
             Scene scene = new Scene(rootLayout);
             primaryStage.setScene(scene);
             primaryStage.show();
@@ -67,6 +69,7 @@ public class DiceMasterOverviewController {
 
     public void showGame() {
         try {
+            this.timer.cancel();
             FXMLLoader loader = new FXMLLoader();
             loader.setLocation(Main.class.getResource("view/InGamePane.fxml"));
             BorderPane rootLayout = loader.load();
@@ -79,5 +82,13 @@ public class DiceMasterOverviewController {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public Server getServer() {
+        return server;
+    }
+
+    public Stage getPrimaryStage() {
+        return primaryStage;
     }
 }

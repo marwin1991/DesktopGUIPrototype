@@ -32,15 +32,15 @@ public class LoginController {
     }
 
     public void handleLoginEvent(MouseEvent mouseEvent) {
-        if(loginText.getText().isEmpty()){
+        if(userNameTextField.getText().isEmpty()){
             showAlert("Type your nick first!");
             return;
         }
-        if(loginText.getText().startsWith("bot#")){
+        if(userNameTextField.getText().startsWith("bot#")){
             showAlert("Your nick can't start with \"bot#\"!");
             return;
         }
-        if(loginText.getText().startsWith(" ")){
+        if(userNameTextField.getText().startsWith(" ")){
             showAlert("Your nick can't start with white character!");
             return;
         }
