@@ -46,7 +46,7 @@ public class FakeServer implements Server {
         List<UserInGame> players = new LinkedList<>();
 
         for(int i=0; i<7; i++){
-            String nick = "Player" + 1;
+            String nick = "Player" + i;
             UserInGame u = new UserInGame(new User(nick),null, i + 15, false);
 
             if(i == 5) u.setHisTurn(true);

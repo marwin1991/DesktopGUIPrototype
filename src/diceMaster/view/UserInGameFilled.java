@@ -13,9 +13,13 @@ public class UserInGameFilled extends Group {
         this.dices = dices;
     }
 
-    public UserInGameFilled(UserInGame player){
+
+    public UserInGameFilled(){}
+
+
+    public void init(UserInGame player){
         this.nickText.setText(player.getUser().getNick());
-        this.nickText.setX(-35.0);
+        this.nickText.setX(-55.0);
         this.nickText.setY(10.0);
         this.scoreText.setText(player.getScore().toString());
         this.scoreText.setX(75.0);

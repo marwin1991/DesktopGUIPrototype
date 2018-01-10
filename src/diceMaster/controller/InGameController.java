@@ -39,13 +39,13 @@ public class InGameController implements GameEventHandler {
     Line splitGameWindowLine;
 
     @FXML
-    UserInGameFilled currentUser;
-
-    @FXML
     UserInGameListView playersWaitingForMove;
 
     @FXML
     UserInGameListView playersMoved;
+
+    @FXML
+    UserInGameFilled currentUser;
 
     public void setAppController(DiceMasterOverviewController appController, int numberOfPlayers) {
         this.appController = appController;
@@ -61,7 +61,8 @@ public class InGameController implements GameEventHandler {
         for(UserInGame player: gameDTO.getPlayers()){
             if(player.isHisTurn()){
                 foundCurrentPlayer = true;
-                this.currentUser = new UserInGameFilled(player);
+                this.currentUser.init(player);
+                continue;
             }
 
             if(foundCurrentPlayer){
@@ -71,8 +72,8 @@ public class InGameController implements GameEventHandler {
             }
         }
 
-        this.playersMoved = new UserInGameListView(afterMove);
-        this.playersWaitingForMove = new UserInGameListView(beforeMove);
+        this.playersMoved.init(afterMove);
+        this.playersWaitingForMove.init(beforeMove);
     }
 
     private void bindSizeProperties(){
