@@ -15,7 +15,7 @@ public class UserInGameListView extends Group {
         for (UserInGame userInGame: usersInGame) {
             UserInGameFilled u = new UserInGameFilled();
             u.init(userInGame);
-            u.setLayoutY(20 * i);
+            u.setLayoutY(40 * i);
             this.getChildren().add(u);
 
             i++;

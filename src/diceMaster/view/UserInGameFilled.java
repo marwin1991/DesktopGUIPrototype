@@ -19,10 +19,9 @@ public class UserInGameFilled extends Group {
 
     public void init(UserInGame player){
         this.nickText.setText(player.getUser().getNick());
-        this.nickText.setX(-55.0);
-        this.nickText.setY(10.0);
+        this.nickText.setY(-10.0);
         this.scoreText.setText(player.getScore().toString());
-        this.scoreText.setX(75.0);
+        this.scoreText.setX(80.0);
         this.scoreText.setY(10.0);
         this.dices.setDicesFiledScale(0.15);
         this.getChildren().add(nickText);

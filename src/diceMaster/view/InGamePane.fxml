@@ -16,7 +16,7 @@
         <Group BorderPane.alignment="CENTER">
             <children>
                 <UserInGameFilled fx:id="currentUser" layoutX="450.0" layoutY="15.0"  />
-                <UserInGameListView fx:id="playersWaitingForMove" layoutX="75.0" layoutY="15.0" />
+                <UserInGameListView fx:id="playersWaitingForMove" layoutX="35.0" layoutY="15.0" />
                 <UserInGameListView fx:id="playersMoved" layoutX="865.0" layoutY="15.0" />
                 <Ellipse fill="#058013" layoutX="500.0" layoutY="353.0" radiusX="450.0" radiusY="160.0" stroke="BLACK"
                          strokeType="INSIDE"/>
